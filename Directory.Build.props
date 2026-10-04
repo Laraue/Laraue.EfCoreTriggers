@@ -3,7 +3,9 @@
     <LangVersion>Latest</LangVersion>
     <Copyright>Ilya Belyanskiy 2020</Copyright>
     <Authors>Belyanskiy Ilya</Authors>
-    <PackageProjectUrl>https://github.com/win7user10/Laraue.EfCoreTriggers</PackageProjectUrl>
+    <PackageProjectUrl>https://laraue.com/blog/projects/ef-core-triggers</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Laraue/Laraue.EfCoreTriggers</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
     <!-- Designate all projects as non-package projects by default -->
     <IsPackable>false</IsPackable>
   </PropertyGroup>
