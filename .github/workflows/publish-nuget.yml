@@ -22,15 +22,8 @@ jobs:
         ports:
           - "5432:5432"
 
-      oracle:
-        image: gvenzl/oracle-free:latest
-        env:
-          ORACLE_PASSWORD: sys_user_password
-          APP_USER: oracle
-          APP_USER_PASSWORD: oracle
-        ports:
-          - "1521:1521"
-          
+      # Oracle tests are excluded from the solution until Oracle.EntityFrameworkCore supports EF Core 11.
+
       sqlserver:
         image: mcr.microsoft.com/mssql/server:2022-latest
         env:
@@ -53,7 +46,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '10.x.x'
+        dotnet-version: '11.x.x'
         
     - name: Restore dependencies
       run: dotnet restore
