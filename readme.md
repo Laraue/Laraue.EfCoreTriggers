@@ -7,10 +7,11 @@ translating into SQL and adding to migrations.
 [![latest version](https://img.shields.io/nuget/dt/Laraue.EfCoreTriggers.Common)](https://www.nuget.org/packages/Laraue.EfCoreTriggers.Common)
 
 #### Versions compatability
-Package major version matches an EF Core major version it uses.
+Package major version matches an EF Core major version it uses. The latest major is developed on `master`, previous majors are maintained on `release/efcore-N` branches.
 
 | Package version | Minimal required .NET version | 
 |-----------------|-------------------------------|
+| 11.x.x          | NET 11.0                      |
 | 10.x.x          | NET 10.0                      |
 | 9.x.x           | NET 8.0                       |
 | 8.x.x           | NET 8.0                       |
