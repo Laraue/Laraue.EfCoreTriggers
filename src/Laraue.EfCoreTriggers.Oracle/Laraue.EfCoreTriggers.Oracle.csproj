@@ -5,7 +5,7 @@
         <Description>Generating native Oracle triggers through migrations using EFCore entity builder.</Description>
         <PackageTags>Entity Framework Core;entity-framework-core;ef;efcore;triggers;sql;Oracle</PackageTags>
         <Nullable>enable</Nullable>
-        <Version>11.0.0</Version>
+        <Version>11.0.1</Version>
     </PropertyGroup>
 
     <ItemGroup>
