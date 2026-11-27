@@ -12,7 +12,7 @@ namespace Laraue.EfCoreTriggers.Common.Migrations
     {
         private readonly ITriggerModelDiffer _triggerModelDiffer;
         private readonly BaseMigrationsModelDiffer _baseModelDiffer;
-        
+
         public MigrationsModelDiffer(
             IServiceProvider serviceProvider,
             ITriggerModelDiffer triggerModelDiffer)
@@ -24,7 +24,7 @@ namespace Laraue.EfCoreTriggers.Common.Migrations
         /// <inheritdoc />
         public bool HasDifferences(IRelationalModel? source, IRelationalModel? target)
         {
-            return _baseModelDiffer.HasDifferences(source, target);
+            return GetDifferences(source, target).Count > 0;
         }
 
         /// <inheritdoc />
