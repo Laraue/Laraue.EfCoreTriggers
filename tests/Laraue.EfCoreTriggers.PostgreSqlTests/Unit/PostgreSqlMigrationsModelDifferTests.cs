@@ -63,6 +63,6 @@ namespace Laraue.EfCoreTriggers.PostgreSqlTests.Unit
     internal static class DbContextRelationalModelExtensions
     {
         public static IRelationalModel GetRelationalModel(this DbContext context) =>
-            context.GetService<IDesignTimeModel>().Model.GetRelationalModel();
+            context.Model.GetRelationalModel();
     }
 }
